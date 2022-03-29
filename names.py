@@ -6,7 +6,7 @@ with open("list.html", "r") as f:
     names = soup.find_all(
         'span', class_='style-scope ytd-playlist-panel-video-renderer', id='video-title')
 
-with open("names2.txt", "w") as names_txt:
+with open("names.txt", "w") as names_txt:
 
     for index, name in enumerate(names, start=1):
         name = name.text.replace(" ", "")
